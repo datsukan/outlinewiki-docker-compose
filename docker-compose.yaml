@@ -1,0 +1,51 @@
+version: "3"
+
+services:
+
+  outline:
+    container_name: outline-outline
+    image: outlinewiki/outline:latest
+    command: sh -c "yarn db:migrate --env production-ssl-disabled && yarn start"
+    env_file: ./.env
+    hostname: localhost
+    ports:
+      - "3000:3000"
+    networks:
+      - common
+
+  postgres:
+    container_name: outline-postgres
+    image: postgres:13.2
+    hostname: localhost
+    ports:
+      - 5432:5432
+    environment:
+      - TZ
+      - POSTGRES_USER
+      - POSTGRES_PASSWORD
+      - POSTGRES_DB
+      - POSTGRES_INITDB_ARGS
+    networks:
+      - common
+    volumes:
+      - outline-postgres-data:/var/lib/postgresql/data
+
+  redis:
+    container_name: outline-redis
+    image: "redis:latest"
+    ports:
+      - "6379:6379"
+    networks:
+      - common
+    volumes:
+      - outline-redis-data:/data
+
+volumes:
+  outline-postgres-data:
+    driver: local
+  outline-redis-data:
+    driver: local
+
+networks:
+  common:
+    driver: bridge
