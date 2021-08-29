@@ -1,7 +1,7 @@
 # Outline wiki docker-compose
 
-It is a setting for server construction of [Outline] (https://github.com/outline/outline) which is an OSS Wiki application.  
-It is based on [chsasank / outline-wiki-docker-compose] (https://github.com/chsasank/outline-wiki-docker-compose).  
+It is a setting for server construction of [Outline](https://github.com/outline/outline) which is an OSS Wiki application.  
+It is based on [chsasank / outline-wiki-docker-compose](https://github.com/chsasank/outline-wiki-docker-compose).  
 Start the application (outline) / DB (PostgreSQL, Redis) with Docker and docker-compose, create a separate AWS S3 bucket for storage, and prepare and set an SMTP server separately.  
 Authentication is done by OAuth of Slack, Google, or AZURE.  
 Since the certificate settings etc. are separated, it is assumed that the reverse proxy of the Web server application (Nginx etc.) will communicate with `http: localhost: 3000` after starting the Docker container locally or in the server.  
