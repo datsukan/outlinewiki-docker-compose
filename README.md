@@ -187,4 +187,8 @@ If you have any problems please share them in the issue.
 
 # Author \ 著者
 
-神達 小楠 (Shonan Kandatsu)
+神達 小楠 - Shonan Kandatsu
+
+# License \ ライセンス
+
+[MIT License](https://en.wikipedia.org/wiki/MIT_License)
