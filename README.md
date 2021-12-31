@@ -187,4 +187,4 @@ If you have any problems please share them in the issue.
 
 # Author \ 著者
 
-神達 小楠 (Shonan Kandatsu)
+datsukan
