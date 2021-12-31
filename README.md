@@ -188,3 +188,7 @@ If you have any problems please share them in the issue.
 # Author \ 著者
 
 datsukan
+
+# License \ ライセンス
+
+[MIT License](https://en.wikipedia.org/wiki/MIT_License)
