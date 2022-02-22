@@ -63,7 +63,7 @@ cp .env.example .env
    5. Set up DB / DBの設定を行う  
     Replace with any value. / 任意の値で置き換えてください。
     ```
-    STGRES_USER=postgres
+    POSTGRES_USER=postgres
     POSTGRES_PASSWORD=password
     POSTGRES_DB=outline
     POSTGRES_INITDB_ARGS="--encoding=UTF-8"
