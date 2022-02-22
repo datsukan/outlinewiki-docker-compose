@@ -17,8 +17,6 @@ services:
     container_name: outline-postgres
     image: postgres:13.2
     hostname: localhost
-    ports:
-      - 5432:5432
     environment:
       - TZ
       - POSTGRES_USER
@@ -33,8 +31,6 @@ services:
   redis:
     container_name: outline-redis
     image: "redis:latest"
-    ports:
-      - "6379:6379"
     networks:
       - common
     volumes:
