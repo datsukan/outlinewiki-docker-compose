@@ -4,14 +4,14 @@ It is a setting for server construction of [Outline](https://github.com/outline/
 It is based on [chsasank / outline-wiki-docker-compose](https://github.com/chsasank/outline-wiki-docker-compose).  
 Start the application (outline) / DB (PostgreSQL, Redis) with Docker and docker-compose, create a separate AWS S3 bucket for storage, and prepare and set an SMTP server separately.  
 Authentication is done by OAuth of Slack, Google, or AZURE.  
-Since the certificate settings etc. are separated, it is assumed that the reverse proxy of the Web server application (Nginx etc.) will communicate with `http: localhost: 3000` after starting the Docker container locally or in the server.  
+Since the certificate settings etc. are separated, it is assumed that the reverse proxy of the Web server application (Nginx etc.) will communicate with `http://localhost:3000` after starting the Docker container locally or in the server.  
 When using a certificate, it is recommended to set "Let's Encrypt" etc. on the Web server application side.
 
 OSSのWikiアプリケーションである[Outline](https://github.com/outline/outline)のサーバー構築用設定です。  
 [chsasank/outline-wiki-docker-compose](https://github.com/chsasank/outline-wiki-docker-compose)をベースにしています。  
 Dockerおよびdocker-composeでアプリ（outline）・DB（PostgreSQL、Redis）を起動、ストレージはAWS S3のバケットを別途作成、SMTPサーバーを別途用意して設定します。  
 認証はSlack・Google・AZUREいずれかのOAuthで行います。  
-証明書設定などは切り離しているので、ローカルもしくはサーバー内でDockerコンテナ起動後に`http:localhost:3000`に対してWebサーバーアプリケーション（Nginxなど）のリバースプロキシで通信させることを想定しています。  
+証明書設定などは切り離しているので、ローカルもしくはサーバー内でDockerコンテナ起動後に`http://localhost:3000`に対してWebサーバーアプリケーション（Nginxなど）のリバースプロキシで通信させることを想定しています。  
 証明書を使用する場合はWebサーバーアプリケーション側で「Let’s Encrypt」などを設定することをおすすめします。  
 
 # Requirement \ 前提要件
