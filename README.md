@@ -192,3 +192,8 @@ datsukan
 # License \ ライセンス
 
 [MIT License](https://en.wikipedia.org/wiki/MIT_License)
+
+
+### Infrastructure model
+
+![Infrastructure model](.infragenie/infrastructure_model.png)
